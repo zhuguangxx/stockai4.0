@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.1"
+  },
+  "agents": {
+    "defaults": {
+      "model": "kimi-coding/k2p5",
+      "contextTokens": 256000
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "StockAI-Main",
+        "workspace": "/opt/stockai4.0",
+        "default": true
+      }
+    ]
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "openclaw-weixin"
+      }
+    }
+  ],
+  "session": {
+    "dmScope": "main"
+  }
+}
